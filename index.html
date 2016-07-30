@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif">
+<script>
+    function windowResize() {
+        var w = window.innerWidth;
+        if(w < 1053){
+            document.getElementById("menu_item_main").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_rooms").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_service").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_contacts").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_transfer").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_sales").setAttribute("style","visibility: hidden");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: visible;");
+        }else{
+            document.getElementById("menu_item_main").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_rooms").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_service").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_contacts").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_transfer").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_sales").setAttribute("style","visibility: visible");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: hidden;");
+        }
+        if(w < 400){
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: -5%;");
+        }else{
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 20px;");
+        }
+    }
+    function dropdownFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<!-- Header -->
+
+<div class="header">
+    <!-- Logo -->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="77px" height="77px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+    </span>
+    <nav class="menu" style="float: right">
+        <ul class="clearfix">
+            <li class="current-item"><a href="#">Главная</a></li>
+            <li><a href="#">Номера</a></li>
+            <li class="withSubMenu">
+                <a href="#">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="#">Услуги и цены</a></li>
+                    <li><a href="#">Бпронирование и оплата</a></li>
+                    <li><a href="#">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Детское меню</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Трансфер</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Акции</a></li>
+        </ul>
+    </nav>
+    <!--<div class="menu_container">-->
+        <!--<a class="menu_item" id="menu_item_main" title="Главная" href="index.html">Главная</a>-->
+        <!--<a class="menu_item menu_item_active" id="menu_item_rooms" title="Номера" href="#">Номера</a>-->
+        <!--<a class="menu_item" id="menu_item_service" title="Услуги" href="clients">Услуги</a>-->
+        <!--<a class="menu_item" id="menu_item_contacts" title="Контакты" href="clients">Контакты</a>-->
+        <!--<a class="menu_item" id="menu_item_transfer" title="Трансфер" href="clients">Трансфер</a>-->
+        <!--<a class="menu_item" id="menu_item_sales" title="Акции" href="clients">Акции</a>-->
+    <!--</div>-->
+    <!--<span class="glyphicon glyphicon-align-justify mobile-menu" id="mobile-menu" style="" aria-hidden="true"></span>-->
+</div>
+
+<!-- Main content -->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img src="img/1.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img src="img/2.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img src="img/3.jpg" alt="Third slide">
+        </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<div id="test" style="height: 150px; width: 100%; background-color: #07569a; text-align: center; color: #ffffff; margin: 0 0 50px 0;";>
+    <span style="display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    line-height: 35px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);">База отдыха Галинонька - доступный <br> отдых для всей семьи</span>
+</div>
+<section class="homePage__directionsPromo">
+    <h1 class="homePage__directionsPromo__header" style="font-size: x-large">DATA + CREATIVITY</h1>
+    <p class="homePage__directionsPromo__text">Actis Wunderman — digital-агентство полного цикла. В основе всех наших креативных решений
+        лежит знание, которое мы получаем после обработки огромного количества данных о продукте,
+        потребителе, конкурентах и многом другом. Этот подход позволяет нам создавать инновационные
+        и точные решения и занимать первые места в отраслевых рейтингах.
+    </p>
+</section>
+<div class="break" style="margin: 3% 0 0 0"></div>
+<div>
+    <div style="text-align: center; vertical-align: middle; width: 100%;color: #07569a;font-size: xx-large;margin: 4% 0;">
+        Номера
+    </div>
+    <div class="container">
+        <div class="booking-element">
+            <img src="img/econom.jpg">
+            <span class="image-caption">Эконом</span>
+        </div>
+        <div class="booking-element">
+            <img src="img/half-lux.jpg">
+            <span class="image-caption">Семейный</span>
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+            <span class="image-caption">Люкс</span>
+        </div>
+    </div>
+</div>
+<div class="break" style="margin: 3% 0 0 0"></div>
+<div id="gallerey" style="text-align: center;">
+    <div style="text-align: center; vertical-align: middle; width: 100%;color: #07569a;font-size: xx-large;margin: 4% 0;">
+        Галерея
+    </div>
+    <div class="container" style="margin-bottom: 50px;">
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 50px;">
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 50px;">
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+        <div class="booking-element">
+            <img src="img/1.jpg">
+        </div>
+    </div>
+    <a class="button_outline" style="min-width: 302px; margin-bottom: 3%" href="gallery.html">Галлерея</a>
+</div>
+<section class="contacts">
+    <div class="contacts__content">
+        <a class="contacts__content__telephone" style="color: #ffffff; text-decoration: none;" href="tel: +38050651-6540"> +38 (050) 651-6540</a><br>
+        <a class="contacts__content__email" href="mailto: azovseagg@gmail.com">azovseagg@gmail.com</a>
+        <p class="contacts__content__address" style="color: #ffffff; font-size: large; line-height: 22px; margin-top: 1%;">72653, Украина, Кирриловка,<br>улица Рыбацкая 48</p>
+        <div class="social" style="display: block">
+            <a class="social__item social__item_fb" href="https://www.facebook.com/wunderman.ru" target="_blank">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a class="social__item social__item_vk" href="https://vk.com/wunderman" target="_blank">
+                <i class="fa fa-vk"></i>
+            </a>
+            <a class="social__item social__item_tw" href="https://twitter.com/WundermanRu" target="_blank">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a class="social__item social__item_in" href="https://www.instagram.com/wundermanru" target="_blank">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a class="social__item social__item_vm" href="https://vimeo.com/wundermanru" target="_blank">
+                <i class="fa fa-vimeo"></i>
+            </a>
+            <a class="social__item social__item_yu" href="https://www.youtube.com/user/wundermanru" target="_blank">
+                <i class="fa fa-youtube-play"></i>
+            </a>
+        </div>
+    </div>
+</section>
+<div id="footer" class="footer">
+    <span id="footer_text" style="float: left; margin: 3.5%">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img src="img/booking.jpg" style="height: 15%; width: 170px; float:right; margin: 2% 5%; cursor: pointer;" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+</body>
+</html>

@@ -1,0 +1,441 @@
+/*Animations*/
+@keyframes widthAnim {
+    from {width: 0;}
+    to {width: 100%;}
+}
+/*CSS*/
+a:focus {
+    text-decoration: none;
+}
+* {
+    box-sizing: border-box;
+}
+.header{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px #888888;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    display: inline;
+    z-index: 100000;
+    text-align: left;
+}
+.header-title{
+    margin: 80px auto 0 auto;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: xx-large
+}
+.header-title:after{
+    content: "";
+    height: 4px;
+    margin-top: 5px;
+    display: block;
+    position: relative;
+    bottom: 0;
+    background: #a500d9;
+    width: 8%;
+    left: 46%;
+}
+.mobile-menu{
+    float: right;
+    line-height: 75px;
+    height: 100%;
+    font-size: x-large;
+    color: #07569a;
+}
+.menu_logo {
+    margin-top: -1px;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+    color: #07569a;
+    font-size: large;
+}
+
+.menu_container{
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    line-height: 80px;
+}
+.menu_item {
+    height: 70px;
+    font-size: 14px;
+    color: #07569a;
+    display: inline-block;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1px;
+    padding: 0 20px;
+    position: relative;
+}
+.menu_item_dropdown {
+    height: 70px;
+    font-size: 14px;
+    color: #07569a;
+    display: inline-block;
+    line-height: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1px;
+    padding: 0 20px;
+    position: relative;
+}
+.menu_item:after {
+    content: "";
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: #07569a;
+    width: 0;
+    left: 0;
+}
+.menu_item:hover:after {
+    animation: widthAnim 500ms 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.menu_item_active:after{
+    content: "";
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    left: 0;
+}
+.menu_item:hover{
+    text-decoration: none;
+}
+.button-holder{
+    position: relative;
+    height: 100%;
+    right: -15%;
+    margin-left: 15%;
+}
+.button-div{
+    height: 100%;
+    display: inline;
+}
+.header-button{
+    position: relative;
+    height: 100%;
+    width: 11%;
+    background-color: #ffffff;
+    color: #0074d9;
+    text-align: center;
+    border: 0;
+    right: 0;
+}
+.carousel{
+    background-color: #2d2d2d;
+}
+.carousel-indicators{
+    bottom: -10px;
+    height: 50px;
+    left: 30%;
+    vertical-align: middle;
+    width: 100%;
+    padding: 16px 25px 0 25px;
+    background-color: rgba(0,0,0,0.15);
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin: 1px 5px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 15px;
+    margin: 0px 4px;
+    background-color: #fff;
+}
+.carousel-control.right, .carousel-control.left{
+    background-image: none;
+    height: 600px;
+    width: 15%;
+}
+.carousel-inner > .carousel-item > img{
+    height: 600px;
+    width: 100%;
+    object-fit: none;
+    object-position: center;
+}
+.logo-container{
+    position: relative;
+    left: 5%;
+    float: left;
+    height: 100%;
+    color: #0074d9;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+}
+.logo-button{
+    position: relative;
+    left: 7%;
+    width: inherit;
+    font-size: larger;
+}
+.logo-button:focus{
+    outline: 0;
+}
+.logo{
+    float: left;
+    height: 100%;
+}
+.homePage__directionsPromo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+.break{
+    height: 1px;
+    background-color: #e1e1e1;
+    margin: 5% 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+}
+.booking-element{
+    width: 30%;
+    margin: 0 2%;
+    text-align: center;
+    cursor: pointer;
+}
+.booking-element img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 5px #888888;
+}
+.image-caption{
+    font-family: 'Product Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: larger;
+    font-weight: bold;
+    bottom: 25px;
+    color: #ffffff;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+.contacts {
+    background-color: #07569a;
+    background-image: url("/img/turkey.jpg");
+    height: 25%;
+    margin: 0;
+}
+.contacts__content {
+    position: relative;
+    top: 50%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 3%;
+    font-size: xx-large;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+.contacts__content__email{
+    margin-bottom: 1%;
+}
+.contacts__content__email:focus, .contacts__content__email:active, .contacts__content__email:hover, .contacts__content__email:visited{
+    color: #428bca;
+    text-decoration: none;
+    outline: none;
+}
+.footer{
+    height: 20%;
+    width: 100%;
+    background-color: #ffffff;
+    overflow:auto;
+}
+.social__item {
+    border-radius: 50%;
+    color: #07569a;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 1% 1% 0 1%;
+    position: relative;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    overflow: hidden;
+}
+.ul-w-price-horizontal .ul-w-price-table .ul-w-price-table-head td {
+    color: #2b292e !important;
+}
+.ul-w-price-horizontal .ul-w-price-table .ul-w-price-table-head td {
+    text-align: center !important;
+    padding: 20px 15px;
+    table-layout: fixed;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:85%;
+    background:#3e3436;
+}
+
+.menu {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.menu li {
+    margin:0px;
+    list-style:none;
+}
+
+.menu a {
+    transition:all linear 0.15s;
+}
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+}
+.menu .current-item > a:after{
+    content: "";
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: #999;
+    width: 100%;
+    left: 0;
+}
+.menu .current-item > a:hover{
+    animation: none;
+    animation-fill-mode: none;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+
+.menu > ul > li > a {
+    height: 80px;
+    font-size: 14px;
+    color: #07569a;
+    line-height: 80px;
+    padding:0 20px;
+    display:inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu > ul > li > a {
+
+}
+
+.menu > ul > li > a:after {
+    content: "";
+    height: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: #07569a;
+    width: 0;
+    left: 0;
+}
+.menu > ul > li > a:hover:after {
+    animation: widthAnim 500ms 1;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.menu > ul > li > a:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/*----- Bottom Level -----*/
+.menu > ul > li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+
+.sub-menu {
+    width:160%;
+    padding:5px 0;
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:-1000;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    box-shadow:0 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+.button_outline {
+    font-size: 13px;
+    border-radius: 5px;
+    color: #4b5c66;
+    border: 1px solid #4b5c66;
+    background-color: "";
+    font-weight: bold;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    line-height: 49px;
+    display: inline-block;
+    padding: 0 75px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: 0.15s;
+    transition: 0.15s;
+}
+.button_outline:hover, .button_outline:focus {
+    color: #fff;
+    border-color: #07569a;
+    background-color: #07569a;
+    text-decoration: none;
+}

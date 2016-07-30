@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif; background-color: #2e2e2e">
+<script>
+    function windowResize() {
+        var w = window.innerWidth;
+        if(w < 1053){
+            document.getElementById("menu_item_main").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_rooms").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_service").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_contacts").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_transfer").setAttribute("style","visibility: hidden");
+            document.getElementById("menu_item_sales").setAttribute("style","visibility: hidden");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: visible;");
+        }else{
+            document.getElementById("menu_item_main").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_rooms").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_service").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_contacts").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_transfer").setAttribute("style","visibility: visible");
+            document.getElementById("menu_item_sales").setAttribute("style","visibility: visible");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: hidden;");
+        }
+        if(w < 400){
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: -5%;");
+        }else{
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 20px;");
+        }
+    }
+</script>
+<!-- Header -->
+<div class="header">
+    <!-- Logo -->
+    <div class="menu_container">
+        <span class="menu_logo" id="menu_logo" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="77px" height="77px">
+            <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+        </span>
+        <a class="menu_item" id="menu_item_main" title="Главная" href="index.html">Главная</a>
+        <a class="menu_item" id="menu_item_rooms" title="Номера" href="rooms.html">Номера</a>
+        <a class="menu_item menu_item_active" id="menu_item_service" title="Услуги" href="#">Услуги</a>
+        <a class="menu_item" id="menu_item_contacts" title="Контакты" href="clients">Контакты</a>
+        <a class="menu_item" id="menu_item_transfer" title="Трансфер" href="clients">Трансфер</a>
+        <a class="menu_item" id="menu_item_sales" title="Акции" href="clients">Акции</a>
+    </div>
+    <span class="glyphicon glyphicon-align-justify mobile-menu" id="mobile-menu" style="" aria-hidden="true"></span>
+</div>
+
+<!-- Main content -->
+<div class="header-title">
+    План-Схема
+</div>
+<div style="background-color: #ffffff; width: 95%; height: 100%;margin: 0 auto 1%; vertical-align: middle; padding: 3%">
+    <img src="img/plane-1.jpg" style="width: 100%">
+    <img src="img/plane-2.jpg" style="width: 100%">
+    <img src="img/plane-3.jpg" style="width: 100%">
+</div>
+<div id="footer" class="footer">
+    <span id="footer_text" style="float: left; margin: 3.5%">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img src="img/booking.jpg" style="height: 15%; width: 170px; float:right; margin: 2% 5%; cursor: pointer;" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+</body>
+</html>
