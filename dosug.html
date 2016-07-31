@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+    <link rel="stylesheet" href="css/justifiedGallery.min.css" />
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif; background-color: #2e2e2e">
+<!-- Header -->
+<div class="header">
+    <!-- Logo -->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+    </span>
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
+        <ul class="clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="rooms.html">Номера</a></li>
+            <li class="current-item" onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="oplata.html">Бронирование и оплата</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyoTTNKCXZfzMD-bRLAQxtp-4GWQ-J8mJrPhkJCIAQ2OXcA/viewform">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                </ul>
+            </li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="howtoget.html">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
+            <li><a href="togo.html">Трансфер</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="actions.html">Акции</a></li>
+        </ul>
+    </nav>
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
+</div>
+
+<!-- Main content -->
+<div class="header-title">
+    Досуг и развлечения
+</div>
+<div style="background-color: #ffffff; width: 95%; height: 100%;margin: 0 auto 1%; vertical-align: middle; padding: 3%">
+    <h2 style="text-align: center; margin-bottom: 25px; font-size: x-large">1. Детский досуг на территории "Галинонька"</h2>
+    <div id="kidsGallery" class="justified-gallery" onload="fillGallery(this,25,'PeopleOnBase');">
+        <a href="img/gallery/PeopleOnBase/6.JPG">
+            <img src="img/gallery/PeopleOnBase/6.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/8.JPG">
+            <img src="img/gallery/PeopleOnBase/8.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/9.JPG">
+            <img src="img/gallery/PeopleOnBase/9.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/10.JPG">
+            <img src="img/gallery/PeopleOnBase/10.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/11.JPG">
+            <img src="img/gallery/PeopleOnBase/11.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/12.JPG">
+            <img src="img/gallery/PeopleOnBase/12.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/13.JPG">
+            <img src="img/gallery/PeopleOnBase/13.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/14.JPG">
+            <img src="img/gallery/PeopleOnBase/14.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/15.JPG">
+            <img src="img/gallery/PeopleOnBase/15.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/16.JPG">
+            <img src="img/gallery/PeopleOnBase/16.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/17.JPG">
+            <img src="img/gallery/PeopleOnBase/17.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/18.JPG">
+            <img src="img/gallery/PeopleOnBase/18.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/19.JPG">
+            <img src="img/gallery/PeopleOnBase/19.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/20.JPG">
+            <img src="img/gallery/PeopleOnBase/20.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/21.JPG">
+            <img src="img/gallery/PeopleOnBase/21.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/22.JPG">
+            <img src="img/gallery/PeopleOnBase/22.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/23.JPG">
+            <img src="img/gallery/PeopleOnBase/23.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/24.JPG">
+            <img src="img/gallery/PeopleOnBase/24.JPG"/>
+        </a>
+        <!-- other images... -->
+    </div>
+    <div style="margin-top: 3%;">Детская площадка, аниматор, мастер-классы по изобразительному искусству, лепка, хореография, дискотеки, вокальные занятия.</div>
+    <div class="break" style="margin: 3% 0"></div>
+    <h2 style="text-align: center; margin-bottom: 25px; font-size: x-large">2. Экскурсии по месту: Аквариум, Террариум</h2>
+    <div id="excursionsGallery" class="justified-gallery" onload="fillGallery(this,25,'PeopleOnBase');">
+        <a href="img/gallery/Excursions/1.jpg">
+            <img src="img/gallery/Excursions/1.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/4.jpg">
+            <img src="img/gallery/Excursions/4.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/5.jpg">
+            <img src="img/gallery/Excursions/5.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/6.jpg">
+            <img src="img/gallery/Excursions/6.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/8.jpg">
+            <img src="img/gallery/Excursions/8.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/9.jpg">
+            <img src="img/gallery/Excursions/9.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/11.jpg">
+            <img src="img/gallery/Excursions/11.jpg"/>
+        </a>
+
+        <!-- other images... -->
+    </div>
+    <div style="margin-top: 3%;">Аквариум - это морской уголок с обзорной панелью, дающий возможность слегка прикоснуться к подводному царству. Расположен досуг рядом с луна-парком. Одно из захватывающих зрелищ - наблюдение за таинственными жителями водной стихии с мостика. Площадь аквариума имеет самые большие размеры на всем побережье. За оптимальную стоимость можно увидеть акулу, черепах, крокодила, варана, самые необычные виды рыб. </div>
+    <div class="break" style="margin: 3% 0"></div>
+    <h2 style="text-align: center; margin-bottom: 25px; font-size: x-large">3. Ретро-корабль "Ласточка"</h2>
+    <div id="lastochkaGallery" class="justified-gallery" onload="fillGallery(this,25,'PeopleOnBase');">
+        <a href="img/gallery/Excursions/2.jpg">
+            <img src="img/gallery/Excursions/2.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/3.jpg">
+            <img src="img/gallery/Excursions/3.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/7.jpg">
+            <img src="img/gallery/Excursions/7.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/10.jpg">
+            <img src="img/gallery/Excursions/10.jpg"/>
+        </a>
+        <!-- other images... -->
+    </div>
+    <div style="margin-top: 3%;">Команда корабля «Ласточка» всегда рада пригласить на прогулки по Утлюкскому лиману.<br><br>
+
+        Во время экскурсии по лиману вам могут встретиться стаи пеликанов, лебедей, уток и другие представители фауны. На корабле работает бар. Музыкальное сопровождение во время всей поездки. Есть туалет.<br><br>
+
+        Катер 2014 года выпуска, прошел все аттестации, имеет необходимые сертификаты и допуски. На катере есть мангал, уютные столики и лежаки. Детям выдаются спасательные жилеты.Команда очень приветливая, состоит из 3 человек: капитана Александра и 2 матросов, которые будут помогать вам во время всей поездки.
+    </div>
+    <div class="break" style="margin: 3% 0"></div>
+    <h2 style="text-align: center; margin-bottom: 25px; font-size: x-large">4. Прибрежная зона</h2>
+    <div id="seashoreGallery" class="justified-gallery" onload="fillGallery(this,25,'PeopleOnBase');">
+        <a href="img/gallery/Excursions/12.jpg">
+            <img src="img/gallery/Excursions/12.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/14.jpg">
+            <img src="img/gallery/Excursions/14.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/13.jpg">
+            <img src="img/gallery/Excursions/13.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/17.jpg">
+            <img src="img/gallery/Excursions/17.jpg"/>
+        </a>
+        <!-- other images... -->
+    </div>
+    <div style="margin-top: 3%;">К Вашим услугам лежаки, водные мотоциклы, катамараны, водные горки и другое.</div>
+    <div class="break" style="margin: 3% 0"></div>
+    <h2 style="text-align: center; margin-bottom: 25px; font-size: x-large">5. Экскурсии на о. Бирючий</h2>
+    <div id="biruchiyGallery" class="justified-gallery" onload="fillGallery(this,25,'PeopleOnBase');">
+        <a href="img/gallery/Excursions/15.jpg">
+            <img src="img/gallery/Excursions/15.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/16.jpg">
+            <img src="img/gallery/Excursions/16.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/18.jpg">
+            <img src="img/gallery/Excursions/18.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/19.jpg">
+            <img src="img/gallery/Excursions/19.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/20.jpg">
+            <img src="img/gallery/Excursions/20.jpg"/>
+        </a>
+        <!-- other images... -->
+    </div>
+</div>
+<div id="footer" class="footer">
+    <span id="footer_text">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
+</body>
+</html>

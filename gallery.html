@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <link rel="stylesheet" href="css/justifiedGallery.min.css" />
+    <script src="js/jquery.justifiedGallery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize();" style="font-family: 'Open Sans', sans-serif; background-color: #2e2e2e">
+<!-- Header -->
+<div class="header">
+    <!-- Logo -->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+    </span>
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
+        <ul class="clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="rooms.html">Номера</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="#">Бронирование и оплата</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyoTTNKCXZfzMD-bRLAQxtp-4GWQ-J8mJrPhkJCIAQ2OXcA/viewform">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Детское меню</a></li>
+                </ul>
+            </li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="howtoget.html">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
+            <li><a href="togo.html">Трансфер</a></li>
+            <li class="current-item"><a href="#">Галерея</a></li>
+            <li><a href="actions.html">Акции</a></li>
+        </ul>
+    </nav>
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
+</div>
+
+<!-- Main content -->
+<div class="header-title">
+    Галерея
+</div>
+<div style="background-color: #ffffff; width: 95%; height: 100%;margin: 0 auto 1%; vertical-align: middle; padding: 3%">
+    <div id="mainGallery" class="justified-gallery">
+        <a href="img/gallery/BaseGG/1.JPG">
+            <img src="img/gallery/BaseGG/1.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/2.JPG">
+            <img src="img/gallery/BaseGG/2.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/3.JPG">
+            <img src="img/gallery/BaseGG/3.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/4.JPG">
+            <img src="img/gallery/BaseGG/4.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/5.JPG">
+            <img src="img/gallery/BaseGG/5.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/6.JPG">
+            <img src="img/gallery/BaseGG/6.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/7.JPG">
+            <img src="img/gallery/BaseGG/7.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/8.JPG">
+            <img src="img/gallery/BaseGG/8.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/9.JPG">
+            <img src="img/gallery/BaseGG/9.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/10.JPG">
+            <img src="img/gallery/BaseGG/10.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/11.JPG">
+            <img src="img/gallery/BaseGG/11.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/12.JPG">
+            <img src="img/gallery/BaseGG/12.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/13.JPG">
+            <img src="img/gallery/BaseGG/13.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/14.JPG">
+            <img src="img/gallery/BaseGG/14.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/15.JPG">
+            <img src="img/gallery/BaseGG/15.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/16.JPG">
+            <img src="img/gallery/BaseGG/16.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/17.JPG">
+            <img src="img/gallery/BaseGG/17.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/18.JPG">
+            <img src="img/gallery/BaseGG/18.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/19.JPG">
+            <img src="img/gallery/BaseGG/19.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/20.JPG">
+            <img src="img/gallery/BaseGG/20.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/21.JPG">
+            <img src="img/gallery/BaseGG/21.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/22.JPG">
+            <img src="img/gallery/BaseGG/22.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/23.JPG">
+            <img src="img/gallery/BaseGG/23.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/24.JPG">
+            <img src="img/gallery/BaseGG/24.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/25.JPG">
+            <img src="img/gallery/BaseGG/25.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/26.JPG">
+            <img src="img/gallery/BaseGG/26.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/27.JPG">
+            <img src="img/gallery/BaseGG/27.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/28.JPG">
+            <img src="img/gallery/BaseGG/28.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/29.JPG">
+            <img src="img/gallery/BaseGG/29.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/30.JPG">
+            <img src="img/gallery/BaseGG/30.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/31.JPG">
+            <img src="img/gallery/BaseGG/31.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/32.JPG">
+            <img src="img/gallery/BaseGG/32.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/33.JPG">
+            <img src="img/gallery/BaseGG/33.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/34.JPG">
+            <img src="img/gallery/BaseGG/34.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/35.JPG">
+            <img src="img/gallery/BaseGG/35.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/36.JPG">
+            <img src="img/gallery/BaseGG/36.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/37.JPG">
+            <img src="img/gallery/BaseGG/37.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/38.JPG">
+            <img src="img/gallery/BaseGG/38.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/39.JPG">
+            <img src="img/gallery/BaseGG/39.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/40.JPG">
+            <img src="img/gallery/BaseGG/40.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/41.JPG">
+            <img src="img/gallery/BaseGG/41.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/42.JPG">
+            <img src="img/gallery/BaseGG/42.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/43.JPG">
+            <img src="img/gallery/BaseGG/43.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/44.JPG">
+            <img src="img/gallery/BaseGG/44.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/45.JPG">
+            <img src="img/gallery/BaseGG/45.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/46.JPG">
+            <img src="img/gallery/BaseGG/46.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/47.JPG">
+            <img src="img/gallery/BaseGG/47.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/48.JPG">
+            <img src="img/gallery/BaseGG/48.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/49.JPG">
+            <img src="img/gallery/BaseGG/49.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/50.JPG">
+            <img src="img/gallery/BaseGG/50.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/51.JPG">
+            <img src="img/gallery/BaseGG/51.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/52.JPG">
+            <img src="img/gallery/BaseGG/52.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/53.JPG">
+            <img src="img/gallery/BaseGG/53.JPG"/>
+        </a>
+        <a href="img/gallery/BaseGG/54.JPG">
+            <img src="img/gallery/BaseGG/54.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/6.JPG">
+            <img src="img/gallery/PeopleOnBase/6.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/8.JPG">
+            <img src="img/gallery/PeopleOnBase/8.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/9.JPG">
+            <img src="img/gallery/PeopleOnBase/9.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/10.JPG">
+            <img src="img/gallery/PeopleOnBase/10.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/11.JPG">
+            <img src="img/gallery/PeopleOnBase/11.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/12.JPG">
+            <img src="img/gallery/PeopleOnBase/12.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/13.JPG">
+            <img src="img/gallery/PeopleOnBase/13.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/14.JPG">
+            <img src="img/gallery/PeopleOnBase/14.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/15.JPG">
+            <img src="img/gallery/PeopleOnBase/15.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/16.JPG">
+            <img src="img/gallery/PeopleOnBase/16.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/17.JPG">
+            <img src="img/gallery/PeopleOnBase/17.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/18.JPG">
+            <img src="img/gallery/PeopleOnBase/18.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/19.JPG">
+            <img src="img/gallery/PeopleOnBase/19.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/20.JPG">
+            <img src="img/gallery/PeopleOnBase/20.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/21.JPG">
+            <img src="img/gallery/PeopleOnBase/21.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/22.JPG">
+            <img src="img/gallery/PeopleOnBase/22.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/23.JPG">
+            <img src="img/gallery/PeopleOnBase/23.JPG"/>
+        </a>
+        <a href="img/gallery/PeopleOnBase/24.JPG">
+            <img src="img/gallery/PeopleOnBase/24.JPG"/>
+        </a>
+        <a href="img/gallery/Excursions/1.jpg">
+            <img src="img/gallery/Excursions/1.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/4.jpg">
+            <img src="img/gallery/Excursions/4.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/5.jpg">
+            <img src="img/gallery/Excursions/5.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/6.jpg">
+            <img src="img/gallery/Excursions/6.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/8.jpg">
+            <img src="img/gallery/Excursions/8.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/9.jpg">
+            <img src="img/gallery/Excursions/9.jpg"/>
+        </a>
+        <a href="img/gallery/Excursions/11.jpg">
+            <img src="img/gallery/Excursions/11.jpg"/>
+        </a>
+        <a href="img/gallery/BaseGG/1.JPG">
+            <img src="img/gallery/BaseGG/1.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/2.JPG">
+            <img src="img/gallery/Rooms01/2.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/3.JPG">
+            <img src="img/gallery/Rooms01/3.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/4.JPG">
+            <img src="img/gallery/Rooms01/4.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/5.JPG">
+            <img src="img/gallery/Rooms01/5.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/6.JPG">
+            <img src="img/gallery/Rooms01/6.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/7.JPG">
+            <img src="img/gallery/Rooms01/7.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/8.JPG">
+            <img src="img/gallery/Rooms01/8.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/9.JPG">
+            <img src="img/gallery/Rooms01/9.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/10.JPG">
+            <img src="img/gallery/Rooms01/10.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/11.JPG">
+            <img src="img/gallery/Rooms01/11.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/12.JPG">
+            <img src="img/gallery/Rooms01/12.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/13.JPG">
+            <img src="img/gallery/Rooms01/13.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/14.JPG">
+            <img src="img/gallery/Rooms01/14.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/15.JPG">
+            <img src="img/gallery/Rooms01/15.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/16.JPG">
+            <img src="img/gallery/Rooms01/16.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/17.JPG">
+            <img src="img/gallery/Rooms01/17.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/18.JPG">
+            <img src="img/gallery/Rooms01/18.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/19.JPG">
+            <img src="img/gallery/Rooms01/19.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/20.JPG">
+            <img src="img/gallery/Rooms01/20.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/21.JPG">
+            <img src="img/gallery/Rooms01/21.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/22.JPG">
+            <img src="img/gallery/Rooms01/22.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/23.JPG">
+            <img src="img/gallery/Rooms01/23.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/24.JPG">
+            <img src="img/gallery/Rooms01/24.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/25.JPG">
+            <img src="img/gallery/Rooms01/25.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/26.JPG">
+            <img src="img/gallery/Rooms01/26.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/27.JPG">
+            <img src="img/gallery/Rooms01/27.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/28.JPG">
+            <img src="img/gallery/Rooms01/28.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/29.JPG">
+            <img src="img/gallery/Rooms01/29.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/30.JPG">
+            <img src="img/gallery/Rooms01/30.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/31.JPG">
+            <img src="img/gallery/Rooms01/31.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/32.JPG">
+            <img src="img/gallery/Rooms01/32.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/33.JPG">
+            <img src="img/gallery/Rooms01/33.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/34.JPG">
+            <img src="img/gallery/Rooms01/34.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/35.JPG">
+            <img src="img/gallery/Rooms01/35.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/36.JPG">
+            <img src="img/gallery/Rooms01/36.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/37.JPG">
+            <img src="img/gallery/Rooms01/37.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/38.JPG">
+            <img src="img/gallery/Rooms01/38.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/39.JPG">
+            <img src="img/gallery/Rooms01/39.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/40.JPG">
+            <img src="img/gallery/Rooms01/40.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/41.JPG">
+            <img src="img/gallery/Rooms01/41.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/42.JPG">
+            <img src="img/gallery/Rooms01/42.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms01/43.JPG">
+            <img src="img/gallery/Rooms01/43.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/1.JPG">
+            <img src="img/gallery/Rooms02/1.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/2.JPG">
+            <img src="img/gallery/Rooms02/2.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/3.JPG">
+            <img src="img/gallery/Rooms02/3.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/4.JPG">
+            <img src="img/gallery/Rooms02/4.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/5.JPG">
+            <img src="img/gallery/Rooms02/5.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/6.JPG">
+            <img src="img/gallery/Rooms02/6.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/7.JPG">
+            <img src="img/gallery/Rooms02/7.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/8.JPG">
+            <img src="img/gallery/Rooms02/8.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/9.JPG">
+            <img src="img/gallery/Rooms02/9.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/10.JPG">
+            <img src="img/gallery/Rooms02/10.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/11.JPG">
+            <img src="img/gallery/Rooms02/11.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/12.JPG">
+            <img src="img/gallery/Rooms02/12.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/13.JPG">
+            <img src="img/gallery/Rooms02/13.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/14.JPG">
+            <img src="img/gallery/Rooms02/14.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/15.JPG">
+            <img src="img/gallery/Rooms02/15.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/16.JPG">
+            <img src="img/gallery/Rooms02/16.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/17.JPG">
+            <img src="img/gallery/Rooms02/17.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/18.JPG">
+            <img src="img/gallery/Rooms02/18.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/19.JPG">
+            <img src="img/gallery/Rooms02/19.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/20.JPG">
+            <img src="img/gallery/Rooms02/20.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/21.JPG">
+            <img src="img/gallery/Rooms02/21.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/22.JPG">
+            <img src="img/gallery/Rooms02/22.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/23.JPG">
+            <img src="img/gallery/Rooms02/23.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/24.JPG">
+            <img src="img/gallery/Rooms02/24.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/25.JPG">
+            <img src="img/gallery/Rooms02/25.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/26.JPG">
+            <img src="img/gallery/Rooms02/26.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/27.JPG">
+            <img src="img/gallery/Rooms02/27.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/28.JPG">
+            <img src="img/gallery/Rooms02/28.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/29.JPG">
+            <img src="img/gallery/Rooms02/29.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/30.JPG">
+            <img src="img/gallery/Rooms02/30.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/31.JPG">
+            <img src="img/gallery/Rooms02/31.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/32.JPG">
+            <img src="img/gallery/Rooms02/32.JPG"/>
+        </a>
+        <a href="img/gallery/Rooms02/33.JPG">
+            <img src="img/gallery/Rooms02/33.JPG"/>
+        </a>
+        <!-- other images... -->
+    </div>
+</div>
+<div id="footer" class="footer">
+    <span id="footer_text">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+</body>
+</html>

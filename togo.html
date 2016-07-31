@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif; background-color: #2e2e2e">
+<!-- Header -->
+<div class="header">
+    <!-- Logo -->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+    </span>
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
+        <ul class="clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="rooms.html">Номера</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="#">Бронирование и оплата</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyoTTNKCXZfzMD-bRLAQxtp-4GWQ-J8mJrPhkJCIAQ2OXcA/viewform">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Детское меню</a></li>
+                </ul>
+            </li>
+            <li><a href="contacts.html">Контакты</a></li>
+            <li><a href="#" class="current-item">Трансфер</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="actions.html">Акции</a></li>
+        </ul>
+    </nav>
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
+</div>
+
+<!-- Main content -->
+<div class="header-title">
+    Наш трансфер
+</div>
+<div style="background-color: #ffffff; width: 95%; height: 100%;margin: 0 auto 1%; vertical-align: middle; padding: 3%">
+    <div class="ul-wysivig-editor clearfix" placeholder="placeholder" style="outline:none; word-wrap: break-word; margin: 0 5px">
+
+        <p>Мы доставим Вас из любой точки Украины ЖД или автотранспортом.</p><p>Вам лишь остается выбрать вид трансфера,&nbsp; который Вы предпочитаете(индивидуальный, групповой). <br></p><p>&nbsp;</p><p>Основные направления автотрансфера: <br></p><p>Групповой : из городов Киев, Днепропетровск, Днепродзержинск, Новомосковск, Харьков, Запорожье, Полтава. <br></p><p>Индивидуальный: из городов: Мелитополь, Запорожье, Днепропетровск, Киев <br></p><p>&nbsp;</p><p>Групповой автотрансфер осуществляется на маршрутках(ближние дистнации, до 3-5 часов в движении), на дальние дистанции - автобус.</p><p>Групповой ЖД трансфер осуществляется уже из пожеланий клиента(плацкарт, купе, СВ).</p><p>Индивидуальный трансфер осуществляется на авто с личным водителем.</p><p> &nbsp;</p><p>В некоторых случаях применяется комбинированный вид трансфера(жд+авто). <br></p><p>&nbsp;</p>
+
+    </div>
+    <div>
+        <h3 style="text-align: center">Примерная стоимость трансфера(маршрутки, автобусы) 2016</h3><br>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Направление</th>
+                <th>Отправление</th>
+                <th>Цена, грн</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Днепропетровск - Галинонька</td>
+                <td>12-00, 16-00</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Запорожье - Галинонька</td>
+                <td>7-00, 18-00</td>
+                <td>100</td>
+            </tr>
+            </tbody>
+        </table>
+        <br>
+        <h3 style="text-align: center">Примерная стоимость трансфера(авто с личным водителем) 2016</h3><br>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Направление</th>
+                <th>Цена, грн</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Запорожье - Галинонька</td>
+                <td>1 700</td>
+            </tr>
+            <tr>
+                <td>Мелитополь - Галинонька</td>
+                <td>490</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="footer" class="footer">
+    <span id="footer_text">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+</body>
+</html>

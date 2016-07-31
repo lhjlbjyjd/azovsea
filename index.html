@@ -8,94 +8,50 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
     <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/scripts.js"></script>
     <!-- Bootstrap 4 -->
     <script src = "js/bootstrap.min.js"></script>
     <title>Галинонька</title>
 </head>
 <body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif">
-<script>
-    function windowResize() {
-        var w = window.innerWidth;
-        if(w < 1053){
-            document.getElementById("menu_item_main").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_rooms").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_service").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_contacts").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_transfer").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_sales").setAttribute("style","visibility: hidden");
-            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: visible;");
-        }else{
-            document.getElementById("menu_item_main").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_rooms").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_service").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_contacts").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_transfer").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_sales").setAttribute("style","visibility: visible");
-            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: hidden;");
-        }
-        if(w < 400){
-            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: -5%;");
-        }else{
-            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 20px;");
-        }
-    }
-    function dropdownFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
-</script>
 <!-- Header -->
 
 <div class="header">
     <!-- Logo -->
     <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
-            <img alt="Logo" src="img/logo.jpg" width="77px" height="77px">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
         <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
             Галинонька
     </span>
-    <nav class="menu" style="float: right">
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
         <ul class="clearfix">
             <li class="current-item"><a href="#">Главная</a></li>
-            <li><a href="#">Номера</a></li>
-            <li class="withSubMenu">
-                <a href="#">Услуги <span class="arrow">&#9660;</span></a>
+            <li><a href="rooms.html">Номера</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
                 <ul class="sub-menu">
-                    <li><a href="#">Услуги и цены</a></li>
-                    <li><a href="#">Бпронирование и оплата</a></li>
-                    <li><a href="#">Анкета отдыхающего</a></li>
-                    <li><a href="#">Развлечения</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Детское меню</a></li>
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="oplata.html">Бронирование и оплата</a></li>
+                    <li><a href="https://docs.google.com/forms/d/1QdT82lJB1CGwVOMtmPkCHxSEzru0sV7nreZbMCGhsTk/viewform">Анкета отдыхающего</a></li>
+                    <li><a href="dosug.html">Развлечения</a></li>
                 </ul>
             </li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Трансфер</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="howtoget.html">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
+            <li><a href="togo.html">Трансфер</a></li>
             <li><a href="#">Галерея</a></li>
-            <li><a href="#">Акции</a></li>
+            <li><a href="actions.html">Акции</a></li>
         </ul>
     </nav>
-    <!--<div class="menu_container">-->
-        <!--<a class="menu_item" id="menu_item_main" title="Главная" href="index.html">Главная</a>-->
-        <!--<a class="menu_item menu_item_active" id="menu_item_rooms" title="Номера" href="#">Номера</a>-->
-        <!--<a class="menu_item" id="menu_item_service" title="Услуги" href="clients">Услуги</a>-->
-        <!--<a class="menu_item" id="menu_item_contacts" title="Контакты" href="clients">Контакты</a>-->
-        <!--<a class="menu_item" id="menu_item_transfer" title="Трансфер" href="clients">Трансфер</a>-->
-        <!--<a class="menu_item" id="menu_item_sales" title="Акции" href="clients">Акции</a>-->
-    <!--</div>-->
-    <!--<span class="glyphicon glyphicon-align-justify mobile-menu" id="mobile-menu" style="" aria-hidden="true"></span>-->
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
 </div>
 
 <!-- Main content -->
@@ -207,7 +163,7 @@
 </div>
 <section class="contacts">
     <div class="contacts__content">
-        <a class="contacts__content__telephone" style="color: #ffffff; text-decoration: none;" href="tel: +38050651-6540"> +38 (050) 651-6540</a><br>
+        <a class="contacts__content__telephone" style="color: #ffffff; text-decoration: none;" href="tel: +38067906-0440"> +38 (067) 906-0440</a><br>
         <a class="contacts__content__email" href="mailto: azovseagg@gmail.com">azovseagg@gmail.com</a>
         <p class="contacts__content__address" style="color: #ffffff; font-size: large; line-height: 22px; margin-top: 1%;">72653, Украина, Кирриловка,<br>улица Рыбацкая 48</p>
         <div class="social" style="display: block">
@@ -233,11 +189,16 @@
     </div>
 </section>
 <div id="footer" class="footer">
-    <span id="footer_text" style="float: left; margin: 3.5%">
+    <span id="footer_text">
         © 2016 Галинонька
     </span>
     &nbsp;
-    <img src="img/booking.jpg" style="height: 15%; width: 170px; float:right; margin: 2% 5%; cursor: pointer;" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
 </div>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = 'VBe8Q4iYKJ';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>

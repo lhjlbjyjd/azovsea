@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:transform="http://www.w3.org/1999/xhtml" xmlns:vertical-align="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src = "js/bootstrap.min.js"></script>
+    <title>Галинонька</title>
+</head>
+<body onresize="windowResize()" onload="windowResize()" style="font-family: 'Open Sans', sans-serif; background-color: #2e2e2e">
+<!-- Header -->
+<div class="header">
+    <!-- Logo -->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+            Галинонька
+    </span>
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
+        <ul class="clearfix">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="rooms.html">Номера</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="#">Бронирование и оплата</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyoTTNKCXZfzMD-bRLAQxtp-4GWQ-J8mJrPhkJCIAQ2OXcA/viewform">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Детское меню</a></li>
+                </ul>
+            </li>
+            <li class="current-item"onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Трансфер</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Акции</a></li>
+        </ul>
+    </nav>
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
+</div>
+
+<!-- Main content -->
+<div class="header-title">
+    Как к нам добраться?
+</div>
+<div style="background-color: #ffffff; width: 95%; height: 100%;margin: 0 auto 1%; vertical-align: middle; padding: 3%">
+    <div class="ul-wysivig-editor clearfix" placeholder="placeholder" style="outline:none; word-wrap: break-word; margin: 0 5px; line-height: 1.42857143;">
+        <h2>1. Ближайшие крупные аэропорты</h2><p>а/п Борисполь(Киев), а/п Днепропетровск(Днепропетровск). <br></p><p>Бронирование, покупка билетов: <a target="_blank" href="http://www.kiyavia.com/">http://www.kiyavia.com/ </a><br></p><h2>2. Аренда автомобилей</h2><p><a target="_blank" href="http://www.rentalcars.com/">http://www.rentalcars.com/ </a><br></p><p><a target="_blank" href="http://www.renter.in.ua">http://www.renter.in.ua </a><br></p><h2>3. Собственным автотранспортом</h2><p>Маршруты следования, км : <br></p><p>Минск-Галинонька(1300) <br></p><p>Киев-Галинонька(760)</p><p>Днепропетровск-Галинонька(280)</p><p>Харьков-Галинонька(500)</p><p>Запорожье-Галинонька(200)</p><p>Мелитополь-Галинонька(73). <br></p><p>Сервис предоставлен: <a target="_blank" href="https://yandex.ua/maps/">https://yandex.ua/maps/</a>,<a target="_blank" href="https://www.google.com.ua/maps"> https://www.google.com.ua/maps</a> <br></p><h2>4. ЖД транспортом<br></h2><p>Расписание и стоимость Вы можете рассчитать сами: <a target="_blank" href="http://booking.uz.gov.ua/">http://booking.uz.gov.ua/</a> <br></p><p>Справочные ЖД: Киев(+380 44 309 70 05),  Днепропетровск( +380 56 793 4826), Запорожье( +380 61 224 40 60), Мелитополь ( +380 6194 7 83 22) <br></p><p><span class="g-color-text-2">ВАЖНО! </span><br></p><p>Основные транспортные узлы развязки: г.Мелитополь, г. Запорожье, г. Днепропетровск. С этих городов Вы можете добраться до "Галинонька" на  маршрутках с пересадкой в пгт. Кирилловка. <br></p><p>Как правило, маршрутки с развозкой по базам начинают работать с конца мая и до начала сентября(уточняйте по телефону). см. услуга <a target="_self" href="/togo">ТРАНСФЕР</a>.<br></p><h2>5. Автотранспорт(Маршрутки, Автобусы) <br></h2><p>Справочные АВТОвокзалов: Киев-Центральный( +380 44 525 57 74), Днепропетровск-Центральный(+380 56 778 40 90), Запорожье-Центральный( +380 61 224 40 46), Мелитополь( +380 6192 6-32-41).Расписание и стоимость Вы можете узнать самостоятельно. <br></p><h2>6. Службы такси по городам: <br></h2><p>г. Киев. Окей: 507(короткий с моб. бесплатно), +380 44 393 03 03; Оптимальное 579(короткий с моб.),  +380 67 665 54 64,  +380 44 499 98 98 <br></p><p>г. Днепропетровск. Оптимальное 579(короткий с моб.),  +380 97 819 77 77, +380 66 469 77 77г. Запорожье. Оптимальное 579(с моб.), +380 99 560 22 22. ИванТакси: 239(с моб.), +380 61 220 8 444, +380 99 636 8 444,  +380 67 522 8 444, +380 63 322 8 444 <br></p><p>г. Мелитополь. ИванТакси: +380 68 04 333 55, +380 99 30 333 55, +380 93 39 333 557. <br></p><h2>7. С автовокзала Кирилловка</h2><p>Маршрутки Автовокзал Кирилловка – Федотовая Коса(Степок). Примерная стоимость 10-15 грн посадочное место. <br></p><p>График движения каждые 15-30 минут. С 8 до 21.<br></p><h2>8. Наш ТРАНСФЕР</h2><p>См. услуга <a target="_self" href="/togo">ТРАНСФЕР </a><br></p><p> &nbsp;</p><p>&nbsp;</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1378.2263108201466!2d35.302547078941636!3d46.300847744408145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDbCsDE4JzAzLjAiTiAzNcKwMTgnMTIuOSJF!5e0!3m2!1sru!2sua!4v1469908515185" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+<div id="footer" class="footer">
+    <span id="footer_text">
+        © 2016 Галинонька
+    </span>
+    &nbsp;
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+</div>
+</body>
+</html>

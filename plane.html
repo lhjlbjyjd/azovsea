@@ -17,47 +17,70 @@
 <script>
     function windowResize() {
         var w = window.innerWidth;
-        if(w < 1053){
-            document.getElementById("menu_item_main").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_rooms").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_service").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_contacts").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_transfer").setAttribute("style","visibility: hidden");
-            document.getElementById("menu_item_sales").setAttribute("style","visibility: hidden");
-            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: visible;");
+        if(w < 1210){
+            document.getElementById("menu").setAttribute("style","visibility: hidden");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: visible; color: #07569a; font-size: x-large;");
         }else{
-            document.getElementById("menu_item_main").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_rooms").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_service").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_contacts").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_transfer").setAttribute("style","visibility: visible");
-            document.getElementById("menu_item_sales").setAttribute("style","visibility: visible");
-            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: hidden;");
+            document.getElementById("menu").setAttribute("style","visibility: visible; float: right;");
+            document.getElementById("mobile-menu").setAttribute("style","height: 75px; position: fixed; line-height: 75px; top: 0; right: 5%;visibility: hidden; color: #07569a;  font-size: x-large;");
         }
         if(w < 400){
-            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: -5%;");
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 0;");
         }else{
-            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 20px;");
+            document.getElementById("menu_logo").setAttribute("style","color: #0074d9;font-size: x-large; margin-left: 60px;");
+        }
+    }
+    function showSubMenu(self,state) {
+        if(state){
+            self.nextElementSibling.setAttribute("style","width: 160%;padding: 5px 0;position: absolute;top: 100%;left: 0;z-index: 1;opacity: 1;transition: opacity linear 0.15s;box-shadow: 0 2px 3px rgba(0,0,0,0.2);background: #2e2728;");
+        }else{
+            self.lastElementChild.setAttribute("style","width: 160%;padding: 5px 0;position: absolute;top: 100%;left: 0;z-index: -1000;opacity: 0;transition: opacity linear 0.15s;box-shadow: 0 2px 3px rgba(0,0,0,0.2);background: #2e2728;");
+        }
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
         }
     }
 </script>
 <!-- Header -->
 <div class="header">
     <!-- Logo -->
-    <div class="menu_container">
-        <span class="menu_logo" id="menu_logo" onclick="window.location.href = 'index.html';">
-            <img alt="Logo" src="img/logo.jpg" width="77px" height="77px">
-            <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
+    <span class="menu_logo" id="menu_logo" style="float: left" onclick="window.location.href = 'index.html';">
+            <img alt="Logo" src="img/logo.jpg" width="80px" height="80px">
+        <!--<h1 class="homePage__directionsPromo__header" style="font-size: x-large">ГАЛИНОНЬКА</h1>-->
             Галинонька
-        </span>
-        <a class="menu_item" id="menu_item_main" title="Главная" href="index.html">Главная</a>
-        <a class="menu_item" id="menu_item_rooms" title="Номера" href="rooms.html">Номера</a>
-        <a class="menu_item menu_item_active" id="menu_item_service" title="Услуги" href="#">Услуги</a>
-        <a class="menu_item" id="menu_item_contacts" title="Контакты" href="clients">Контакты</a>
-        <a class="menu_item" id="menu_item_transfer" title="Трансфер" href="clients">Трансфер</a>
-        <a class="menu_item" id="menu_item_sales" title="Акции" href="clients">Акции</a>
-    </div>
-    <span class="glyphicon glyphicon-align-justify mobile-menu" id="mobile-menu" style="" aria-hidden="true"></span>
+    </span>
+    <nav class="menu" id="menu" style="float: right; visibility: hidden">
+        <ul class="clearfix">
+            <li class="current-item"><a href="#">Главная</a></li>
+            <li><a href="rooms.html">Номера</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="services.html">Услуги и цены</a></li>
+                    <li><a href="oplata.html">Бронирование и оплата</a></li>
+                    <li><a href="#">Анкета отдыхающего</a></li>
+                    <li><a href="#">Развлечения</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">Детское меню</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Трансфер</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="#">Акции</a></li>
+        </ul>
+    </nav>
+    <span class="glyphicon glyphicon-align-justify" id="mobile-menu"></span>
 </div>
 
 <!-- Main content -->
@@ -70,11 +93,11 @@
     <img src="img/plane-3.jpg" style="width: 100%">
 </div>
 <div id="footer" class="footer">
-    <span id="footer_text" style="float: left; margin: 3.5%">
+    <span id="footer_text">
         © 2016 Галинонька
     </span>
     &nbsp;
-    <img src="img/booking.jpg" style="height: 15%; width: 170px; float:right; margin: 2% 5%; cursor: pointer;" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
+    <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
 </div>
 </body>
 </html>
