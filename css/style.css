@@ -421,7 +421,6 @@ a:focus {
     border-radius: 5px;
     color: #4b5c66;
     border: 1px solid #4b5c66;
-    background-color: "";
     font-weight: bold;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -457,4 +456,18 @@ a:focus {
     vertical-align: bottom;
     border-bottom: 2px solid #eceeef;
     background: #eceeef;
+}
+.tooltip-inner {
+    max-width: 200%;
+    /* If max-width does not work, try using width instead */
+    width: 200%;
+}
+.booking-element a:hover{
+    text-decoration: none;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+.contacts-list-item{
+    margin-left: 10px;
 }

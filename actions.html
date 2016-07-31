@@ -36,7 +36,14 @@
                     <li><a href="dosug.html">Развлечения</a></li>
                 </ul>
             </li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
             <li><a href="togo.html">Трансфер</a></li>
             <li><a href="gallery.html">Галерея</a></li>
             <li class="current-item"><a href="#">Акции</a></li>

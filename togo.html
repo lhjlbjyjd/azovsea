@@ -31,16 +31,21 @@
                 <a href="services.html" onmouseenter="showSubMenu(this,true)">Услуги <span class="arrow">&#9660;</span></a>
                 <ul class="sub-menu">
                     <li><a href="services.html">Услуги и цены</a></li>
-                    <li><a href="#">Бронирование и оплата</a></li>
+                    <li><a href="oplata.html">Бронирование и оплата</a></li>
                     <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSejyoTTNKCXZfzMD-bRLAQxtp-4GWQ-J8mJrPhkJCIAQ2OXcA/viewform">Анкета отдыхающего</a></li>
-                    <li><a href="#">Развлечения</a></li>
-                    <li><a href="#">Меню</a></li>
-                    <li><a href="#">Детское меню</a></li>
+                    <li><a href="dosug.html">Развлечения</a></li>
                 </ul>
             </li>
-            <li><a href="contacts.html">Контакты</a></li>
-            <li><a href="#" class="current-item">Трансфер</a></li>
-            <li><a href="#">Галерея</a></li>
+            <li onmouseleave="showSubMenu(this,false)">
+                <a href="contacts.html" onmouseenter="showSubMenu(this,true)">Контакты <span class="arrow">&#9660;</span></a>
+                <ul class="sub-menu">
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="howtoget.html">Как к нам добратся?</a></li>
+                    <li><a href="plane.html">План-схема</a></li>
+                </ul>
+            </li>
+            <li class="current-item"><a href="#">Трансфер</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
             <li><a href="actions.html">Акции</a></li>
         </ul>
     </nav>
@@ -109,5 +114,10 @@
     &nbsp;
     <img id="footer_image" src="img/booking.jpg" onclick="window.open('http://www.booking.com/hotel/ua/galinonka.ru.html?aid=330843;sid=c6832873de4a74e2aaf50e870d5b8727;dcid=12;dist=0&sb_price_type=total&type=total&');">
 </div>
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = 'VBe8Q4iYKJ';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 </body>
 </html>
